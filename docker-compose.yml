@@ -25,9 +25,9 @@ services :
     volumes:
       - 'db-data:/var/lib/postresql/data'
     environment:
-      //ローカルホスト実行用
-      //- 'POSTGRES_USER=postgres'
-      //- 'POSTGRES_PASSWORD=postgres'
+      ## ローカルホスト実行用
+      ##- 'POSTGRES_USER=postgres'
+      ##- 'POSTGRES_PASSWORD=postgres'
 
-      //travis環境での実行用
+      ##travis環境での実行用
       - 'POSTGRES_HOST_AUTH_METHOD=trust'
